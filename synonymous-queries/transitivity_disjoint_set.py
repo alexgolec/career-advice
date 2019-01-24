@@ -4,7 +4,7 @@ class DisjointSet(object):
 
     def get_root(self, w):
         words_traversed = []
-        while self.parents[w] != w:
+        while w in self.parents and self.parents[w] != w:
             words_traversed.append(w)
             w = self.parents[w]
         for word in words_traversed:
@@ -30,9 +30,7 @@ class DisjointSet(object):
 def preprocess_synonyms(synonym_words):
     ds = DisjointSet()
     for w1, w2 in synonym_words:
-        ds.add(w1)
-        ds.add(w2)
-        ds.join(w1, w2)
+        ds.add_synonyms(w1, w2)
     return ds
 
 
