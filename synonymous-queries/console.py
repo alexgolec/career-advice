@@ -36,7 +36,7 @@ def console(synonym_queries):
         pass
 
     try:
-        print('Input queries':)
+        print('Input queries:')
         while True:
             q1 = normalize(input('Query 1: ').strip())
             q2 = normalize(input('Query 2: ').strip())
