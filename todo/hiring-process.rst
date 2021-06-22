@@ -1,0 +1,3 @@
+TODO:
+ * Stages of hiring
+ * https://discord.com/channels/721434269045751859/730970354452922389/856159275797708800

@@ -122,3 +122,4 @@ tags
 [._]*.un~
 
 .DS_Store
+_output
